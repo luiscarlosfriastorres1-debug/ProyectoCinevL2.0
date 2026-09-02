@@ -1,0 +1,61 @@
+﻿@using Models
+@inject HttpClient http
+<body>
+
+
+
+	<h3>Peliculas vL</h3>
+	@if(pelicula1 is null)
+	{
+		<p>cargando.....</p>
+	}
+	else
+	{
+		<div class="mayorconte-img">
+			@foreach (var pelicula in pelicula1)
+			{
+				<div class="cuadro-img">
+					<img src="@pelicula.ImagenUrl" />
+					<p class="titulo">@pelicula.Titulo </p>
+					<p class="categoria">@pelicula.Genero </p>
+				</div>
+			}
+		</div>
+	}
+
+
+
+</body>
+
+
+@code {
+
+
+	List<Pelicula> pelicula1 = new();
+	protected override async Task OnInitializedAsync()
+	{
+		await ObtenerPeliculas();
+	}
+	public async Task ObtenerPeliculas()
+	{
+		pelicula1 = await http.GetFromJsonAsync<List<Pelicula>>("https://localhost:7266/api/Pelicula");
+	}
+
+
+	List<vL> ListP = new List<vL>
+	{
+		new vL(1, "Son Como Niños", "Comedia","/Son Como Niños 2.webp"),
+		new vL(2, "El Padrino", "Drama","https://imgs.search.brave.com/TzEn3nKBKvl3zrpP7wKcBTSqxGRNvR7xMZXP7zgV51M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9lbC1k/ZXRhbGxlLWRlbC1h/ZmljaGUtY2luZS1w/YWRyaW5vLWNvbi1t/YXJsb24tYnJhbmRv/LXktYWwtcGFjaW5v/LWRlLXZpZXJzZW4t/YWxlbWFuaWEtbWF5/by1zZS1jZW50cmEt/ZW4tY2VudHJvLTMy/NzEyMDY3NS5qcGc"),
+		new vL(3, "El Conjuro", "Terror","https://imgs.search.brave.com/b6mZ7ubdKObGZEQntu_SemSAsOEgsOeni2xDBWIIwhc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9teC53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18yMTVf/Mjg2L2ltZy8wYi8y/OS8wYjI5YTUxOWE2/NDlkMDdjNmYzZTc0/NDZlYTU1MzdkMy5q/cGc"),
+		new vL(4, "El Señor de los Anillos", "Aventura", "https://imgs.search.brave.com/9zYtz_e6j_COLJKys3GXukRNkK3MxAi0ga0U-k1Ui74/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy91cDZn/aWh6bGZlcXpraGlm/cXdjb29hZ296b3Qt/NjZkNmRkOGUyODcx/MC5qcGc_Y3JvcD0x/eHc6MXhoO2NlbnRl/cix0b3A"),
+		new vL(5, "El Origen", "Ciencia Ficción", "https://imgs.search.brave.com/hLRPD3oNk_1BrTOhu0QT9NH-ZRNzexVPHRNgfJprPxs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bXViaXMuZXMvbWVk/aWEvY292ZXJzLzEw/MjkvMTAwNi9vcmln/ZW4taW5jZXB0aW9u/LXBvcnRhZGEtbF9j/b3Zlci5qcGc"),
+		new vL(6, "La La Land", "Musical", "https://imgs.search.brave.com/IkKGoHaaU3ab1pDA84_Gy2iecR87lARRfX7Z5lEQEM0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tb3Zp/ZXBvc3Rlcm1leGlj/by5jb20vY2RuL3No/b3AvcHJvZHVjdHMv/bGFfbGFfbGFuZF92/ZXIxMV94eGxnXzI1/MHgyNTBAMnguanBn/P3Y9MTU3MTM1NTgy/Nw"),
+		new vL(7, "Titanic", "Romance", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw73C0IYkjxbBtJuoHK6U_V6Q8KCUzv06eocndMI6Gdg&s=10"),
+		new vL(8, "Jurassic Park", "Ciencia Ficción", "https://imgs.search.brave.com/98kW8V5xPc5iL1D9ctBrRW-czTpSbJmR-SsATHuhz5Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLjNk/anVlZ29zLmNvbS9q/dWVnb3MvMTk0MDkv/anVyYXNzaWNfcGFy/a19jbGFzc2ljX2dh/bWVzX2NvbGxlY3Rp/b24vZm90b3MvZmlj/aGEvanVyYXNzaWNf/cGFya19jbGFzc2lj/X2dhbWVzX2NvbGxl/Y3Rpb24tNTg1MjM2/Ni53ZWJw"),
+		new vL(9, "El Resplandor", "Terror", "https://imgs.search.brave.com/THwSBpVjqVErNXmj3e3pv1y6hIGgVsgLP4pXhtyYbXQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFyUmJ2OGxLY0wu/anBn"),
+		new vL(10, "Forrest Gump", "Drama","https://imgs.search.brave.com/UcIGyQMlyeb78d4rA10Ht3UTFdDBJiEyJCnzZd-YI1M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVjdXJzb3N5aGFi/aWxpZGFkZXMuY29t/L2Ntc0FkbWluL3Vw/bG9hZHMvb18xYzZr/N2dsazIxcWVvMTR0/OTFrOXUxMDgzZzBn/YS5qcGc")
+	};
+
+
+
+}

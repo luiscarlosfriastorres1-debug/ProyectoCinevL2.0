@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../CineAPI/CineAPI.csproj" Id="fcfd2a52-f139-4702-b8c8-08e90fee4bf4" />
+  <Project Path="BlazorApp2.csproj" />
+</Solution>

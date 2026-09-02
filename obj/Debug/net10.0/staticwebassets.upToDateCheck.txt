@@ -1,0 +1,9 @@
+wwwroot\app.css
+wwwroot\Son Como Niños 2.webp
+Components\Layout\ReconnectModal.razor.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.web.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.server.js
+C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\wwwroot\app.css
+C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\Components\Layout\ReconnectModal.razor.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.web.js
+C:\Users\Aprendiz\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.server.js

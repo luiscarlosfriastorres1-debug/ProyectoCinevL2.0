@@ -1,0 +1,55 @@
+/* CSS for CinePeliculas component */
+.sliders img[b-4es1j3f4gn]{
+    width:100%;
+    height:700px;
+
+}
+
+h3[b-4es1j3f4gn] {
+    margin-top:50px;
+    color: #ff1e1e;
+    text-align: center;
+    margin: 20px 0;
+    font-size:40px;
+    font-weight: 600;
+    font-family: Arial;
+}
+
+body[b-4es1j3f4gn] {
+    margin: 0;
+    background-color: #0f0f14;
+}
+
+.mayorconte-img[b-4es1j3f4gn] {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.cuadro-img img[b-4es1j3f4gn] {
+    transition: transform 0.3s ease-in-out;
+    width: 290px;
+    height: 420px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.cuadro-img:hover img[b-4es1j3f4gn] {
+    transform: scale(1.05);
+}
+
+.titulo[b-4es1j3f4gn]{
+    color:#ffffff;
+    font-weight:600;
+    font-family:Arial;
+}
+
+.categoria[b-4es1j3f4gn] {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: Arial;
+}

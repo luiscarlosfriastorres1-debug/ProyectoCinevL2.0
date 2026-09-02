@@ -1,0 +1,187 @@
+﻿@page "/login"
+@rendermode InteractiveServer
+
+@using BlazorApp2.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject HttpClient http
+
+<PageTitle>Iniciar sesión - Películas vL</PageTitle>
+
+<div class="login-page">
+
+    <div class="movie-background">
+        @if (pelicula1.Count > 0)
+        {
+            @for (int i = 0; i < pelicula1.Count && i < 10; i++)
+            {
+                <div class="movie-card card-@i">
+                    <img src="@pelicula1[i].ImagenUrl"
+                         alt="@pelicula1[i].Titulo" />
+                </div>
+            }
+        }
+    </div>
+
+    <div class="background-overlay"></div>
+
+    <main class="login-content">
+
+        <section class="login-box">
+
+            <div class="login-logo">
+
+                <div class="film-icon">
+                    <div class="film-strip">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="play-button"></div>
+
+                    <div class="film-strip">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <h1>Peliculas <strong>vL</strong></h1>
+
+                <p>Tus películas favoritas, en un solo lugar.</p>
+
+            </div>
+
+            <EditForm Model="@loginModel" OnValidSubmit="IniciarSesion">
+
+                <DataAnnotationsValidator />
+
+                <div class="input-group">
+
+                    <label>Correo electrónico</label>
+
+                    <InputText @bind-Value="loginModel.Correo"
+                               type="email"
+                               placeholder="ejemplo@correo.com"
+                               class="login-input" />
+
+                    <ValidationMessage For="@(() => loginModel.Correo)" />
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Contraseña</label>
+
+                    <InputText @bind-Value="loginModel.Contrasena"
+                               type="@(mostrarPassword ? "text" : "password")"
+                               placeholder="Ingresa tu contraseña"
+                               class="login-input" />
+
+                    <ValidationMessage For="@(() => loginModel.Contrasena)" />
+
+                </div>
+
+                <div class="forgot-password">
+                    <a href="/recuperar">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="login-button">
+                    Iniciar sesión
+                </button>
+
+            </EditForm>
+
+            <div class="register-text">
+                ¿No tienes cuenta?
+                <a href="/registro">Regístrate</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="login-footer">
+
+        <div class="footer-item">
+            <div class="footer-icon">♡</div>
+
+            <div>
+                <strong>Miles de películas</strong>
+                <span>y series</span>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-icon hd">HD</div>
+
+            <div>
+                <strong>Calidad</strong>
+                <span>HD y 4K</span>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-icon">▣</div>
+
+            <div>
+                <strong>Disfruta en todos</strong>
+                <span>tus dispositivos</span>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+
+@code {
+
+    List<Pelicula> pelicula1 = new();
+
+    LoginModel loginModel = new();
+
+    bool mostrarPassword;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ObtenerPeliculas();
+    }
+
+    async Task ObtenerPeliculas()
+    {
+        try
+        {
+            pelicula1 = await http.GetFromJsonAsync<List<Pelicula>>(
+                "https://localhost:7266/api/Pelicula"
+            ) ?? new();
+        }
+        catch
+        {
+            pelicula1 = new();
+        }
+    }
+
+    async Task IniciarSesion()
+    {
+        Console.WriteLine(loginModel.Correo);
+        Console.WriteLine(loginModel.Contrasena);
+
+        await Task.CompletedTask;
+    }
+
+    public class LoginModel
+    {
+        [System.ComponentModel.DataAnnotations.Required(
+            ErrorMessage = "Ingresa tu correo."
+        )]
+        [System.ComponentModel.DataAnnotations.EmailAddress(
+            ErrorMessage = "Ingresa un correo válido."
+        )]
+        public string Correo { get; set; } = "";
+
+        [System.ComponentModel.DataAnnotations.Required(
+            ErrorMessage = "Ingresa tu contraseña."
+        )]
+        public string Contrasena { get; set; } = "";
+    }
+}
