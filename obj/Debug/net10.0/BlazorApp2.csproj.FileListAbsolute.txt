@@ -66,7 +66,6 @@ C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\scopedcs
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\scopedcss\Components\Pages\Parametros\CinevL.razor.rz.scp.css
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\scopedcss\bundle\BlazorApp2.styles.css
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\scopedcss\projectbundle\BlazorApp2.bundle.scp.css
-C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\fcccs64pwj-{0}-z4z4fil66m-z4z4fil66m.gz
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\9lmi2to54l-{0}-cyz5k529gx-cyz5k529gx.gz
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\l7k1t0s1c2-{0}-f7fxoh55ae-f7fxoh55ae.gz
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\46ortvw2k1-{0}-68qhiysw0j-68qhiysw0j.gz
@@ -83,5 +82,6 @@ C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\BlazorAp
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\ref\BlazorApp2.dll
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\BlazorApp2.sourcelink.json
 C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\scopedcss\Components\Pages\Login.razor.rz.scp.css
-C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\9y60nfedcw-{0}-5oj37ggrsf-5oj37ggrsf.gz
-C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\dqrlejl56i-{0}-5oj37ggrsf-5oj37ggrsf.gz
+C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\fcccs64pwj-{0}-qzbrp7jipm-qzbrp7jipm.gz
+C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\9y60nfedcw-{0}-dpb0xp8xux-dpb0xp8xux.gz
+C:\Users\Aprendiz\Downloads\Proyecto_vLPeliculas-main\obj\Debug\net10.0\compressed\dqrlejl56i-{0}-dpb0xp8xux-dpb0xp8xux.gz

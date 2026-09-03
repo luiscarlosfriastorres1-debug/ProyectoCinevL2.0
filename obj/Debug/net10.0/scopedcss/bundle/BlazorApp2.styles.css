@@ -308,6 +308,7 @@ body[b-gkmdmq1724]{
 
 .login-box[b-gkmdmq1724] {
     width: 480px;
+
     padding: 32px 40px;
     background: linear-gradient( 145deg, rgba(10,10,10,.98), rgba(3,3,3,.98) );
     border: 1px solid rgba(255,0,0,.65);
@@ -334,7 +335,7 @@ body[b-gkmdmq1724]{
 
 
         .login-logo h1 strong[b-gkmdmq1724] {
-            color: #ff1111;
+            color: #C93616;
         }
 
 
@@ -361,7 +362,7 @@ body[b-gkmdmq1724]{
 .film-strip[b-gkmdmq1724] {
     width: 15px;
     height: 54px;
-    background: #ff1010;
+    background: #C93616;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -382,7 +383,7 @@ body[b-gkmdmq1724]{
     height: 0;
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
-    border-left: 27px solid #ff1010;
+    border-left: 27px solid #C93616;
     margin-left: 7px;
 }
 
@@ -403,11 +404,11 @@ body[b-gkmdmq1724]{
     }
 
 .login-input[b-gkmdmq1724] {
-    width: 100%;
+    width: 92%;
     height: 55px;
     padding: 0 15px;
     background: #181818;
-    color: black;
+    color:white;
     border: 1px solid #333;
     border-radius: 10px;
     outline: none;
@@ -485,7 +486,7 @@ body[b-gkmdmq1724]{
     height: 58px;
     border: 0;
     border-radius: 12px;
-    background: linear-gradient( 90deg, #ed0505, #ff1717 );
+    background: linear-gradient( 90deg, #C93616, #BD2500 );
     color: white;
     font-size: 19px;
     font-weight: 600;
@@ -610,7 +611,7 @@ body[b-gkmdmq1724]{
 .login-footer[b-gkmdmq1724] {
     position: relative;
     z-index: 20;
-    min-height: 155px;
+    min-height: 10px;
     background: rgba(5,5,5,.97);
     border-top: 1px solid #151515;
     display: flex;
@@ -618,6 +619,7 @@ body[b-gkmdmq1724]{
     justify-content: center;
     gap: 100px;
     padding: 25px 40px;
+    display:none;
 }
 
 
@@ -625,13 +627,13 @@ body[b-gkmdmq1724]{
     display: flex;
     align-items: center;
     gap: 18px;
-    min-width: 200px;
+    min-width: 20px;
 }
 
 
 .footer-icon[b-gkmdmq1724] {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;

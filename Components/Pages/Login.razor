@@ -1,9 +1,9 @@
-﻿@page "/login"
+﻿@page "/";
 @rendermode InteractiveServer
 
 @using BlazorApp2.Models
-@using Microsoft.AspNetCore.Components.Forms
 @inject HttpClient http
+@inject NavigationManager Navegacion
 
 <PageTitle>Iniciar sesión - Películas vL</PageTitle>
 
@@ -31,6 +31,7 @@
             <div class="login-logo">
 
                 <div class="film-icon">
+
                     <div class="film-strip">
                         <span></span>
                         <span></span>
@@ -44,6 +45,7 @@
                         <span></span>
                         <span></span>
                     </div>
+
                 </div>
 
                 <h1>Peliculas <strong>vL</strong></h1>
@@ -52,45 +54,33 @@
 
             </div>
 
-            <EditForm Model="@loginModel" OnValidSubmit="IniciarSesion">
-
-                <DataAnnotationsValidator />
+            <div>
 
                 <div class="input-group">
-
                     <label>Correo electrónico</label>
 
-                    <InputText @bind-Value="loginModel.Correo"
-                               type="email"
-                               placeholder="ejemplo@correo.com"
-                               class="login-input" />
-
-                    <ValidationMessage For="@(() => loginModel.Correo)" />
-
+                    <input type="email"
+                           placeholder="ejemplo@correo.com"
+                           class="login-input" @bind="usuario.Correo" required/>
                 </div>
 
                 <div class="input-group">
-
                     <label>Contraseña</label>
 
-                    <InputText @bind-Value="loginModel.Contrasena"
-                               type="@(mostrarPassword ? "text" : "password")"
-                               placeholder="Ingresa tu contraseña"
-                               class="login-input" />
-
-                    <ValidationMessage For="@(() => loginModel.Contrasena)" />
-
+                    <input type="password"
+                           placeholder="Ingresa tu contraseña"
+                           class="login-input" @bind="usuario.Password" required/>
                 </div>
 
                 <div class="forgot-password">
                     <a href="/recuperar">¿Olvidaste tu contraseña?</a>
                 </div>
 
-                <button type="submit" class="login-button">
+                <button type="submit" class="login-button" @onclick="ValidarLogin">
                     Iniciar sesión
                 </button>
 
-            </EditForm>
+            </div>
 
             <div class="register-text">
                 ¿No tienes cuenta?
@@ -133,21 +123,12 @@
     </footer>
 
 </div>
-
 @code {
-
+    List<Usuario> usuarios = new ();
+    Usuario usuario = new();
     List<Pelicula> pelicula1 = new();
-
-    LoginModel loginModel = new();
-
-    bool mostrarPassword;
-
+    string mensaje = "";
     protected override async Task OnInitializedAsync()
-    {
-        await ObtenerPeliculas();
-    }
-
-    async Task ObtenerPeliculas()
     {
         try
         {
@@ -160,28 +141,19 @@
             pelicula1 = new();
         }
     }
-
-    async Task IniciarSesion()
+    public async Task ValidarLogin()
     {
-        Console.WriteLine(loginModel.Correo);
-        Console.WriteLine(loginModel.Contrasena);
 
-        await Task.CompletedTask;
-    }
+        usuarios = await http.GetFromJsonAsync<List<Usuario>>("https://localhost:7266/api/Usuarios") ?? new();
+        bool validar = usuarios.Any(user => user.Correo == usuario.Correo && user.Password == usuario.Password);
+        if (validar)
+        {
+            Navegacion.NavigateTo("/home");
+        }
+        else
+        {
+            mensaje = "Datos incorrectos";
+        }
 
-    public class LoginModel
-    {
-        [System.ComponentModel.DataAnnotations.Required(
-            ErrorMessage = "Ingresa tu correo."
-        )]
-        [System.ComponentModel.DataAnnotations.EmailAddress(
-            ErrorMessage = "Ingresa un correo válido."
-        )]
-        public string Correo { get; set; } = "";
-
-        [System.ComponentModel.DataAnnotations.Required(
-            ErrorMessage = "Ingresa tu contraseña."
-        )]
-        public string Contrasena { get; set; } = "";
     }
 }
