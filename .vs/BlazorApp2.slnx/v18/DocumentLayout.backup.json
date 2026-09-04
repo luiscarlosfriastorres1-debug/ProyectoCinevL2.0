@@ -3,18 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\Aprendiz\\Downloads\\Proyecto_vLPeliculas-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FCFD2A52-F139-4702-B8C8-08E90FEE4BF4}|..\\CineAPI\\CineAPI.csproj|c:\\users\\aprendiz\\downloads\\cineapi\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFD2A52-F139-4702-B8C8-08E90FEE4BF4}|..\\CineAPI\\CineAPI.csproj|c:\\users\\aprendiz\\downloads\\cineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCFD2A52-F139-4702-B8C8-08E90FEE4BF4}|..\\CineAPI\\CineAPI.csproj|c:\\users\\aprendiz\\downloads\\cineapi\\controllers\\peliculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|c:\\users\\aprendiz\\downloads\\proyecto_vlpeliculas-main\\components\\pages\\login.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|solutionrelative:components\\pages\\login.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|c:\\users\\aprendiz\\downloads\\proyecto_vlpeliculas-main\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCFD2A52-F139-4702-B8C8-08E90FEE4BF4}|..\\CineAPI\\CineAPI.csproj|c:\\users\\aprendiz\\downloads\\cineapi\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCFD2A52-F139-4702-B8C8-08E90FEE4BF4}|..\\CineAPI\\CineAPI.csproj|c:\\users\\aprendiz\\downloads\\cineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|c:\\users\\aprendiz\\downloads\\proyecto_vlpeliculas-main\\components\\pages\\parametros\\cinevl.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -29,9 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|c:\\users\\aprendiz\\downloads\\proyecto_vlpeliculas-main\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCFD2A52-F139-4702-B8C8-08E90FEE4BF4}|..\\CineAPI\\CineAPI.csproj|c:\\users\\aprendiz\\downloads\\cineapi\\controllers\\peliculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{417074B4-7328-F4AC-826D-BBE9F9706807}|BlazorApp2.csproj|c:\\users\\aprendiz\\downloads\\proyecto_vlpeliculas-main\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,7 +67,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Login.razor.css",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\Proyecto_vLPeliculas-main\\Components\\Pages\\Login.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Login.razor.css",
@@ -95,12 +95,11 @@
               "RelativeToolTip": "Components\\Pages\\Login.razor.css",
               "ViewState": "AgIAAJwAAAAAAAAAAAAnwKkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-09-02T17:21:57.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T17:21:57.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Pelicula.cs",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\CineAPI\\Models\\Pelicula.cs",
               "RelativeDocumentMoniker": "..\\CineAPI\\Models\\Pelicula.cs",
@@ -113,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\CineAPI\\Program.cs",
               "RelativeDocumentMoniker": "..\\CineAPI\\Program.cs",
@@ -121,12 +120,11 @@
               "RelativeToolTip": "..\\CineAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T15:25:37.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T15:25:37.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "PeliculaController.cs",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\CineAPI\\Controllers\\PeliculaController.cs",
               "RelativeDocumentMoniker": "..\\CineAPI\\Controllers\\PeliculaController.cs",
@@ -134,12 +132,11 @@
               "RelativeToolTip": "..\\CineAPI\\Controllers\\PeliculaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T15:16:13.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T15:16:13.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\CineAPI\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "..\\CineAPI\\Controllers\\UsuariosController.cs",
@@ -147,12 +144,11 @@
               "RelativeToolTip": "..\\CineAPI\\Controllers\\UsuariosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T14:17:52.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-03T14:17:52.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DbCinevLContext.cs",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\CineAPI\\Models\\DbCinevLContext.cs",
               "RelativeDocumentMoniker": "..\\CineAPI\\Models\\DbCinevLContext.cs",
@@ -160,8 +156,7 @@
               "RelativeToolTip": "..\\CineAPI\\Models\\DbCinevLContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T15:13:07.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T15:13:07.975Z"
             },
             {
               "$type": "Document",
@@ -177,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\Proyecto_vLPeliculas-main\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
@@ -185,12 +180,11 @@
               "RelativeToolTip": "Components\\Pages\\Login.razor",
               "ViewState": "AgIAABcAAAAAAAAAAAAYwDIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T13:35:59.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T13:35:59.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\Proyecto_vLPeliculas-main\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
@@ -198,12 +192,11 @@
               "RelativeToolTip": "Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-14T17:13:23.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T17:13:23.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CinevL.razor",
               "DocumentMoniker": "C:\\Users\\Aprendiz\\Downloads\\Proyecto_vLPeliculas-main\\Components\\Pages\\Parametros\\CinevL.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Parametros\\CinevL.razor",
@@ -211,8 +204,7 @@
               "RelativeToolTip": "Components\\Pages\\Parametros\\CinevL.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-14T17:13:32.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T17:13:32.593Z"
             },
             {
               "$type": "Document",
@@ -224,8 +216,7 @@
               "RelativeToolTip": "..\\CineAPI\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T14:15:19.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-03T14:15:19.269Z"
             },
             {
               "$type": "Document",
@@ -237,8 +228,7 @@
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T14:15:33.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-03T14:15:33.677Z"
             },
             {
               "$type": "Document",
@@ -262,8 +252,7 @@
               "RelativeToolTip": "Models\\Pelicula.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T15:56:22.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T15:56:22.791Z"
             },
             {
               "$type": "Document",
@@ -275,8 +264,7 @@
               "RelativeToolTip": "wwwroot\\app.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-09-03T14:05:16.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-03T14:05:16.393Z"
             },
             {
               "$type": "Document",
